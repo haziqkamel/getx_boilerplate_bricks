@@ -7,7 +7,7 @@ class {{feature_name.pascalCase()}}Controller extends GetxController {
     required this.{{feature_name.camelCase()}}UseCase,
   });
 
-  RxBool _isLoading = RxBool(false);
+  final RxBool _isLoading = RxBool(false);
   bool get isLoading => _isLoading.value;
 
   @override
